@@ -10,7 +10,7 @@ SELECT record_name FROM albums WHERE release_date<1980;
 UPDATE albums
 SET release_date = 1901
 WHERE release_date<1980;
-SELECT * FROM albums WHERE release_date = 1805;
+SELECT * FROM albums WHERE release_date = 1901;
 SELECT 'Michael Jackson' AS 'Albums by';
 SELECT record_name FROM albums WHERE artist= 'Michael Jackson';
 UPDATE albums
