@@ -7,7 +7,8 @@ WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 
 SELECT emp_no, first_name, last_name
 FROM employees
-WHERE last_name LIKE 'E%';
+WHERE last_name LIKE 'E%'
+OR LIKE '%E';
 
 SELECT emp_no, first_name, last_name, hire_date
 FROM employees
