@@ -1,26 +1,26 @@
 USE employees;
 
+-- Sorting names by gender(males)
 SELECT emp_no, first_name, last_name, gender
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya') 
 AND gender = 'M'
-COUNT(*)
-AND gender = 'F'
-COUNT(*)
 ORDER BY last_name DESC, first_name DESC;
 
+-- Count of names
 SELECT COUNT(*), gender
 FROM employees
 WHERE first_name IN ('IRENA', 'Vidya', "Maya")
 GROUP BY gender;
 
+-- sorting names beginning and ending with the letter E
 SELECT emp_no, first_name, last_name
 FROM employees
 WHERE last_name LIKE 'E%'
 OR last_name LIKE '%E'
 ORDER BY emp_no DESC;
 
-SELECT emp_no, first_name, last_name
+SELECT CONCAT(first_name,' ', last_name) 
 FROM employees
 WHERE last_name LIKE 'E%'
 AND last_name LIKE '%E';
