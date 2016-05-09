@@ -32,4 +32,4 @@ WHERE birth_date LIKE '%-12-25';
 SELECT emp_no, first_name, last_name
 FROM employees
 WHERE last_name LIKE '%q%'
-AND last_name NOT IN ('%qu%');
+AND last_name NOT LIKE '%qu%';
